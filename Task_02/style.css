@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #aaf0d1; 
+}
+
+.container {
+    background-color: pink;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+
+.stopwatch {
+    display: inline-block; 
+    text-align: center; 
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 5px solid #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.display {
+    font-size: 24px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-btn, .reset-btn {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.stop-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.start-btn:hover, .reset-btn:hover, .stop-btn:hover {
+    background-color: #27ae60;
+}
+
+.start-btn:disabled, .reset-btn:disabled {
+    background-color: #bdc3c7;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.stop-btn:disabled {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.laps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.laps h2 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.laps ul {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.laps li {
+    margin-bottom: 5px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+.laps li:last-child {
+    border-bottom: none;
+}
